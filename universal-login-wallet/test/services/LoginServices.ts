@@ -5,7 +5,7 @@ import WalletService from '../../src/services/WalletService';
 import {setupSdk} from 'universal-login-sdk/test';
 
 
-describe('LogiServices', () => {
+describe('LoginService', () => {
   let creationService: any;
   let connectToWalletService: any;
   let walletService: any;

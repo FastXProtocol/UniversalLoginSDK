@@ -5,6 +5,7 @@ import Modal from '../Modals/Modal';
 import {useServices, useRouter} from '../../hooks';
 import {DEFAULT_LOCATION, Procedure} from 'universal-login-commons';
 import {utils} from 'ethers';
+import { connect } from 'http2';
 
 const MINIMUM_TOPUP_AMOUNT = utils.parseEther('0.005');
 
@@ -14,7 +15,7 @@ interface LoginProps {
 }
 
 const Login = ({setAuthorized, location} : LoginProps) => {
-  const {createWallet, modalService, balanceService} = useServices();
+  const {createWallet, modalService, balanceService, connectToWallet} = useServices();
   const {history} = useRouter();
   const from = location && location.state ? location.state.from : DEFAULT_LOCATION;
   let unsubscribe: Procedure;
@@ -25,7 +26,8 @@ const Login = ({setAuthorized, location} : LoginProps) => {
     unsubscribe = balanceService.subscribe(onBalanceChange);
   };
 
-  const onConnectionClick = () => {
+  const onConnectionClick = async (name: string) => {
+    await connectToWallet(name);
     modalService.showModal('waiting');
   };
 
