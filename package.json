@@ -9,6 +9,7 @@
     "chalk": "^2.0.1"
   },
   "workspaces": [
+    "fastx-points-wallet",
     "universal-login-commons",
     "universal-login-contracts",
     "universal-login-relayer",

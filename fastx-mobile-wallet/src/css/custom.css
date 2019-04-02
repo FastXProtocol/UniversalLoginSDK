@@ -1,0 +1,104 @@
+#app{
+    height: 100%;
+}
+
+.wallet-header{
+    padding: 16px;
+    background-color: rgb(9,82,220);
+    color: white;
+    text-align: center;
+}
+
+.wallet-header .title{
+    font-size: 16px;
+    font-weight: 100;
+    padding-top: 16px;
+}
+
+.wallet-header .content{
+    font-size: 22px;
+    line-height: 44px;
+}
+
+.wallet-header .button{
+    font-size: 16px;
+    color: white;
+    padding: 16px 32px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.page-header{
+    background-color: rgb(9,82,220);
+    text-align: center;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    position: relative;
+}
+
+.page-header .button{
+    color: white;
+    position: absolute;
+    left: 16px;
+}
+
+.income-box{
+    margin: 16px !important;
+    background-color: rgb(9,82,220);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.custom-tab .tab{
+    margin-top: 0;
+    border: none;
+    box-shadow: none;
+    padding-top: 0;
+}
+
+.custom-tab.trade .ui.menu .item{
+    width: 33%;
+    display: block;
+    text-align: center;
+}
+
+.custom-tab .ui.secondary.pointing.menu{
+    margin-bottom: 0;
+}
+
+.custom-tab .ui.secondary.pointing.menu .active.item{
+    color: rgb(9,82,220);
+    border-color: rgb(9,82,220);
+}
+
+.add_btn{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border: 1px dashed grey;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.add_btn .icon{
+    font-size: 58px;
+    color: grey;
+    line-height: 58px;
+}
+
+.header-search{
+    margin: 16px 16px 0 16px;
+}
+
+.header-search .ui.input{
+    width: 100%;
+}
